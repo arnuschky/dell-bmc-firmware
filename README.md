@@ -1,9 +1,11 @@
 dell-bmc-firmware
 =================
 
-Tools for extracting and modifying the firmware of the BMC of Dell PowerEdge servers.
-Please note that these tools only apply to a given generation of Dell PowerEdge servers,
-more specifically, they should work on generation 8 and 9 servers.
+Tools for extracting and modifying the firmware of the baseboard management controller (BMC) in
+Dell PowerEdge servers.  Please note that these tools only apply to certain generations of Dell
+PowerEdge servers which use a BMC -- more specifically, they should work on most Generation 8, 9,
+and 10 servers.  Later generations use a "lifecycle controller" instead, which is not supported by
+these tools.
 
 See: http://en.wikipedia.org/wiki/List_of_Dell_PowerEdge_Servers
 
@@ -17,7 +19,7 @@ adjust-fan-thresholds
 ---------------------
 
 Python script to adjust the lower critical fan thresholds hardcoded in the BMC.
-This change allows to use fans with lower RPM.
+This change allows the use of fans with lower RPM.
 
 See: http://projects.nuschkys.net/2011/11/15/how-to-adjust-the-fan-thresholds-of-a-dell-poweredge/
 
